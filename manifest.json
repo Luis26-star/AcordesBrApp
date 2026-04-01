@@ -1,0 +1,8 @@
+{
+  "name": "Acordes Brasil",
+  "short_name": "Acordes",
+  "start_url": "/AcordesBrApp/",
+  "display": "standalone",
+  "background_color": "#1b7a5a",
+  "theme_color": "#1b7a5a"
+}
