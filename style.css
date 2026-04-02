@@ -1,16 +1,44 @@
 
 body{
+  margin:0;
 font-family: Arial;
-background:#0b7a3c;
+background:linear-gradient(135deg,#d9f24a,#0b7a3c);
 color:white;
 text-align:center;
-padding-top:80px;
 }
 
-.container{
-max-width:600px;
-margin:auto;
+.hero{
+pading-top:120px;
 }
+
+.logo{
+width:160px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:48px;
+margin:0;
+}
+
+.subtitle{
+font-size:20px;
+opacity:0.9;
+margin-top:10px;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:14px 28px;
+background:white;
+color:#0b7a3c;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+
+}
+
 
 header{
 display:flex;
