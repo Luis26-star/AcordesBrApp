@@ -5,7 +5,6 @@ adme1"}
 
 <h1 align="center">AcordesBrA
 
-/h1>
 
 # AcordesBr
 
