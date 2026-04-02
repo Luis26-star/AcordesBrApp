@@ -19,35 +19,39 @@
 
 <!-- Treble Clef -->
 <path d="
-M420 220
-C360 200 320 260 360 310
-C410 360 470 350 500 400
-C540 470 470 540 400 520
-C340 500 360 430 420 430
-C500 430 560 500 520 580
-C480 660 380 680 320 620
-C260 560 260 460 320 420
-" 
+M420 180
+C360 180 330 240 370 300
+C420 360 510 340 540 420
+C580 520 500 620 400 600
+C320 580 330 480 410 470
+C500 460 600 540 560 650
+C520 760 360 760 300 650
+C250 560 270 420 380 380
+"
 fill="none"
 stroke="url(#gold)"
-stroke-width="35"
-stroke-linecap="round"/>
+stroke-width="45"
+stroke-linecap="round"
+stroke-linejoin="round"
+filter="url(#shadow)"/>
 
 <!-- A -->
-<text x="470" y="640"
-font-size="320"
+<text x="480" y="640"
+font-size="340"
 font-family="Arial, Helvetica, sans-serif"
 font-weight="700"
-fill="#ffffff">
+fill="#ffffff"
+filter="url(#shadow)">
 A
 </text>
 
 <!-- B -->
-<text x="650" y="640"
-font-size="320"
+<text x="660" y="640"
+font-size="340"
 font-family="Arial, Helvetica, sans-serif"
 font-weight="700"
-fill="#ffffff">
+fill="#ffffff"
+filter="url(#shadow)">
 B
 </text>
 
