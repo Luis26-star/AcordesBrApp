@@ -3,7 +3,7 @@
   <img src="logo.svg" width="220">
 </p>
 
-<h1 align="center">AcordesBrApp</h1>
+<h1 align="center">AcordesBr</h1>
   
 Music learning app for Brazilian chords and harmony.
 
