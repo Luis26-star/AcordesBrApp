@@ -1,4 +1,14 @@
+adme1"}
+<p align="center">
+  <img src="logo.svg" width="220">
+</p>
+
+<h1 align="center">AcordesBrA
+
+/h1>
+
 # AcordesBr
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
 
 <defs>
@@ -27,5 +37,7 @@
       fill="#ffffff">
 B
 </text>
+
+<img src="logo.svg" width="200">
 
 </svg>
