@@ -1,11 +1,13 @@
 
 <p align="center">
-  <img src="logo.svg" width="220">
+  <img src="logo.svg" width="160">
 </p>
 
 <h1 align="center">AcordesBr</h1>
-  
-Music learning app for Brazilian chords and harmony.
+
+<p align="center">  
+Vamos cantar MPB
+</p>
 
 Features:
 - chord explorer
