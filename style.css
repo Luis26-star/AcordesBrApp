@@ -1,12 +1,16 @@
 
 body{
-  margin:0;
+margin:0;
 font-family: Arial;
 background:linear-gradient(135deg,#d9f24a,#0b7a3c);
 color:white;
 text-align:center;
 }
-
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:40px;
+}
 .hero{
 pading-top:120px;
 }
