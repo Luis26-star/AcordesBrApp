@@ -5,11 +5,16 @@ background:linear-gradient(135deg,#d9f24a,#0b7a3c);
 color:blue;
 text-align:center;
 }
-
+h1, h2 {
+  color: #0B1F3B;
 .container{
 max-width:900px;
 margin:auto;
 padding:80px 20px;
+}
+  p {
+  color: #222222;
+    
 }
 
 .logo{
