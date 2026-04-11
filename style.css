@@ -223,4 +223,41 @@ font-size:48px;
 
 }
 
+
+.dropdown{
+position:relative;
+}
+
+.dropdown-menu{
+
+display:none;
+position:absolute;
+top:35px;
+left:0;
+background:white;
+list-style:none;
+padding:10px 0;
+border-radius:8px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+
+}
+
+.dropdown-menu li{
+
+padding:8px 20px;
+
+}
+
+.dropdown-menu a{
+
+text-decoration:none;
+color:#333;
+
+}
+
+.dropdown:hover .dropdown-menu{
+
+display:block;
+
+}
 }
