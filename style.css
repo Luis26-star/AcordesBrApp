@@ -182,21 +182,27 @@ padding:80px;
 
 .events{
 
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-
+display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  justify:center;
+  margin-top:40px;
 }
 
 .event-card{
-
+width:3320px;
 background:white;
-border-radius:14px;
+border-radius:12px;
 overflow:hidden;
-box-shadow:0 12px 35px rgba(0,0,0,0.08);
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  transition:transform 0.3s, box-shadow 0.3s;
 
 }
+.event-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.2);
 
+  } 
 .event-card img{
 
 width:100%;
@@ -207,7 +213,8 @@ object-fit:cover;
 
 .event-content{
 
-padding:25px;
+padding:20px;
+  text-align:center;
 
 }
 
