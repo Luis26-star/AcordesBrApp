@@ -10,7 +10,7 @@ text-align:center;
 }
 .hero{
 height:420px;
-background-image:url("https://picsum.photos/1200/600");
+background-image:url("https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4");
 background-size:cover;
 background-position:center;
 display:flex;
@@ -21,7 +21,7 @@ justify-content:center;
 .hero-overlay{
 background:rgba(30,127,90,0.75);
 padding:60px;
-border-radius:10px;
+border-radius:12px;
 color:white;
 text-align:center;
 }
@@ -37,12 +37,15 @@ margin-bottom:25px;
 }
 
 .hero-button{
+transition:all 0.3s ease;
 background:#FFD166;
 color:#1E7F5A;
-padding:14px 24px;
+padding:16px 28px;
 text-decoration:none;
 font-weight:700;
-border-radius:6px;
+border-radius:8px;
+display:inline-block;
+margin-top:20px;
 }
 
 .hero-button:hover{
