@@ -48,6 +48,41 @@ border-radius:6px;
 .hero-button:hover{
 background:white;
 }
+.concert-cards{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.concert-card{
+background:white;
+padding:25px;
+border-radius:10px;
+width:250px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.concert-card h3{
+color:#1E7F5A;
+margin-bottom:10px;
+}
+
+.ticket-button{
+display:inline-block;
+margin-top:10px;
+background:#FFD166;
+color:#1E7F5A;
+padding:10px 18px;
+text-decoration:none;
+border-radius:6px;
+font-weight:600;
+}
+.ticket-button:hover{
+  background:white;
+  }
+
 .menu {
 display:flex;
 gap:20px;
