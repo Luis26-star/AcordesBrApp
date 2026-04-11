@@ -307,7 +307,36 @@ display:flex;
 display:flex;
 
 }
+/* Dropdown Menü */
 
+.dropdown {
+position: relative;
+}
+
+.dropdown-menu {
+display: none;
+position: absolute;
+top: 40px;
+right: 0;
+background: white;
+list-style: none;
+padding: 10px 0;
+border-radius: 8px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.dropdown-menu li {
+padding: 8px 20px;
+}
+
+.dropdown-menu a {
+color: #333;
+text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
 }
 }
 
