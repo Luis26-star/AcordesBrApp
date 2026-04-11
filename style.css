@@ -260,4 +260,54 @@ color:#333;
 display:block;
 
 }
+  /* MOBILE NAV */
+
+.menu-toggle{
+
+display:none;
+flex-direction:column;
+cursor:pointer;
+
 }
+
+.menu-toggle span{
+
+height:3px;
+width:25px;
+background:#333;
+margin:4px 0;
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.menu{
+
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:white;
+flex-direction:column;
+display:none;
+padding:20px;
+
+}
+
+.menu.active{
+
+display:flex;
+
+}
+
+.menu-toggle{
+
+display:flex;
+
+}
+
+}
+}
+
