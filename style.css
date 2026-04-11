@@ -68,3 +68,27 @@ font-size:18px;
 background:#155f45;
 transform:scale(1.05);
 }
+header{
+background:#1E7F5A;
+color:white;
+padding:20px;
+}
+
+header h1{
+margin:0;
+}
+
+.navbar{
+margin-top:15px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+.navbar a:hover{
+text-decoration:underline;
+}
