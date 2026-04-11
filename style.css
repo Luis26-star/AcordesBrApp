@@ -140,6 +140,26 @@ background:var(--accent);
 
 }
 
+.member-buttons a{
+
+display:block;
+width:260px;
+margin:20px auto;
+padding:15px;
+background:#1E7F5A;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-size:18px;
+
+}
+
+.member-buttons a:hover{
+
+background:#155f45;
+
+}
+
 /* SECTION */
 
 .section{
