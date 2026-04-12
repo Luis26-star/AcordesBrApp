@@ -1,100 +1,46 @@
-function setTempo(speed){
-document.getElementById("sopran").playbackRate = speed;
-document.getElementById("alt").playbackRate = speed;
-document.getElementById("tenor").playbackRate = speed;
-document.getElementById("bass").playbackRate = speed;
+function loadSong(song){
+
+const player = document.getElementById("player-"+song)
+
+player.innerHTML = `
+
+<button onclick="playAll('${song}')">▶ Alle Stimmen</button>
+<button onclick="playVoice('${song}','soprano')">Sopran</button>
+<button onclick="playVoice('${song}','alt')">Alt</button>
+<button onclick="playVoice('${song}','tenor')">Tenor</button>
+<button onclick="playVoice('${song}','bass')">Bass</button>
+<button onclick="stopAll('${song}')">⏹ Stop</button>
+
+<audio id="${song}-soprano" src="audio/${song}/soprano.mp3"></audio>
+<audio id="${song}-alt" src="audio/${song}/alt.mp3"></audio>
+<audio id="${song}-tenor" src="audio/${song}/tenor.mp3"></audio>
+<audio id="${song}-bass" src="audio/${song}/bass.mp3"></audio>
+
+`
 }
 
-let loopInterval;
+function playAll(song){
 
-function startLoop(){
-
-let start = document.getElementById("loopStart").value;
-let end = document.getElementById("loopEnd").value;
-
-loopInterval = setInterval(function(){
-
-let audio = document.getElementById("sopran");
-
-if(audio.currentTime >= end){
-audio.currentTime = start;
-}
-
-},200);
-
-}
-
-function stopLoop(){
-clearInterval(loopInterval);
-}
-function playVoice(voice){
-
-stopAll();
-
-document.getElementById(voice).play();
+document.getElementById(song+"-soprano").play()
+document.getElementById(song+"-alt").play()
+document.getElementById(song+"-tenor").play()
+document.getElementById(song+"-bass").play()
 
 }
 
-function stopAll(){
+function playVoice(song,voice){
 
-document.getElementById("sopran").pause();
-document.getElementById("alt").pause();
-document.getElementById("tenor").pause();
-document.getElementById("bass").pause();
+stopAll(song)
+document.getElementById(song+"-"+voice).play()
 
 }
-const songs = [
 
-{
-title: "Canto de Ossanha",
-folder: "canto_ossanha"
-},
+function stopAll(song){
 
-{
-title: "Choro Bandido",
-folder: "choro_bandido"
+["soprano","alt","tenor","bass"].forEach(v=>{
+const audio=document.getElementById(song+"-"+v)
+audio.pause()
+audio.currentTime=0
+})
+
 }
-
-];
-
-const voices = ["sopran","alt","tenor","bass"];
-
-const container = document.getElementById("songList");
-
-songs.forEach(song => {
-
-let block = document.createElement("div");
-
-block.innerHTML = `<h3>🎵 ${song.title}</h3>`;
-
-voices.forEach(v => {
-
-let audio = document.createElement("audio");
-
-audio.id = song.folder + "_" + v;
-
-audio.src = "audio/" + song.folder + "/" + v + ".mp3";
-
-container.appendChild(audio);
-
-});
-
-let playAll = document.createElement("button");
-
-playAll.innerText = "▶ Alle Stimmen";
-
-playAll.onclick = () => {
-
-voices.forEach(v => {
-
-document.getElementById(song.folder + "_" + v).play();
-
-});
-
-};
-
-block.appendChild(playAll);
-
-container.appendChild(block);
-
-});
