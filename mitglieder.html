@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <title>Acordes Brasil – Mitglieder</title>
@@ -8,7 +8,46 @@
 
 <body>
 
+
+<nav class="navbar">
+<a href="index.html">Start</a>
+<a href="chor.html">Der Chor</a>
+<a href="konzerte.html">Konzerte</a>
+<a href="repertoire.html">Repertoire</a>
+<a href="galerie.html">Galerie</a>
+<a href="mitmachen.html">Mitmachen</a>
+<a href="mitglieder.html">Mitglieder</a>
+<a href="kontakt.html">Kontakt</a>
+</nav>
+
+<section class="section">
+
+  
 <h1>Mitgliederbereich</h1>
+<p>Bem-vindo ao espaço para cantantes.</p>
+
+<div class="member-grid">
+<div class="member-card">
+
+<h3>🎼 Noten</h3>
+<p>Download der aktuellen Chorstücke.</p>
+<a href="#">Noten öffnen</a>
+</div>
+
+<div class="member-card">
+<h3>🎧 Übe-Audios</h3>
+<p>Stimmproben für Sopran, Alt, Tenor und Bass.</p>
+<a href="#">Audios hören</a>
+</div>
+
+<div class="member-card">
+<h3>📅 Probenplan</h3>
+<p>Alle kommenden Proben und Termine.</p>
+<a href="#">Plan ansehen</a>
+</div>
+</div>
+</section>
+  
 
 <div class="login-box">
 <input type="password" id="password" placeholder="Passwort">
@@ -37,14 +76,29 @@
 <span>Cantantes</span>
 </a>
 
-<a class="member-card" href="DIRETORIA_LINK" target="_blank">
+<a class="member-card" href="DIRETORIA-LINK DO GOOGLE DRIVE" target="_blank">
 🔒
 <span>Diretoria</span>
 </a>
 
 </div>
 
-<script src="js/login.js"></script>
+<script>
+function login(){
+
+let password = document.getElementById("password").value;
+
+if(password === "chor2025"){
+document.getElementById("members").style.display = "block";
+document.querySelector(".login-box").style.display = "none";
+}
+
+else{
+alert("Falsches Passwort");
+}
+
+}
+</script>
 
 </body>
 </html>
