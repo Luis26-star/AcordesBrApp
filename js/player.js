@@ -1,45 +1,58 @@
-const songs = ["Canto_de_Ossanha"];
+const songs = [
+  {
+    title: "Canto de Ossanha",
+    folder: "canto_ossanha"
+  }
+];
 
-const voices = ["Soprano","Contralto","Tenor","Baixo"];
+const voices = [
+  {name:"Sopran",file:"sopran.mp3"},
+  {name:"Alt",file:"alt.mp3"},
+  {name:"Tenor",file:"tenor.mp3"},
+  {name:"Bass",file:"bass.mp3"}
+];
 
-const container = document.getElementById("song-list");
+const container = document.getElementById("player");
 
 songs.forEach(song => {
 
-  let block = document.createElement("div");
+  const card = document.createElement("div");
+  card.style.marginBottom = "25px";
 
-  block.style.marginBottom = "30px";
+  const title = document.createElement("h3");
+  title.innerText = "🎵 " + song.title;
 
-  let title = document.createElement("h3");
-  title.innerText = song.replace("_"," ");
-
-  block.appendChild(title);
+  card.appendChild(title);
 
   voices.forEach(v => {
 
-    let btn = document.createElement("button");
+    const btn = document.createElement("button");
 
-    btn.innerText = "▶ " + v;
+    btn.innerText = "▶ " + v.name;
 
     btn.style.margin = "5px";
-    btn.style.padding = "8px 14px";
+    btn.style.padding = "10px 16px";
     btn.style.borderRadius = "20px";
     btn.style.border = "none";
-    btn.style.background = "#2e7d32";
+    btn.style.background = "#1db954";
     btn.style.color = "white";
+    btn.style.fontSize = "14px";
     btn.style.cursor = "pointer";
 
     btn.onclick = () => {
 
-      let audio = new Audio(`audio/${song}/${v}.mp3`);
+      const audio = new Audio(
+        "audio/" + song.folder + "/" + v.file
+      );
+
       audio.play();
 
     };
 
-    block.appendChild(btn);
+    card.appendChild(btn);
 
   });
 
-  container.appendChild(block);
+  container.appendChild(card);
 
 });
