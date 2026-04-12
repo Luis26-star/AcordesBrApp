@@ -144,7 +144,21 @@ oninput="setVolume('bass',this.value)">
 <button onclick="stopLoop()">⏹ Loop stoppen</button>
 
 </div>
+<div class="tempo">
 
+<h4>🐢 Tempo</h4>
+
+<label>Tempo einstellen</label>
+<input
+type="range"
+id="tempoControl"
+min="0.6"
+max="1.2"
+step="0.05"
+value="1"
+oninput="setTempo(this.value)">
+
+</div>
 <div class="progress">
 
 <input type="range"
