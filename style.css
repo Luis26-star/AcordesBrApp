@@ -190,3 +190,30 @@ font-weight:bold;
 .navbar a:hover{
 text-decoration:underline;
 }
+  .audio-section{
+max-width:600px;
+margin:auto;
+text-align:left;
+}
+
+.audio-section h3{
+color:#1E7F5A;
+margin-top:25px;
+}
+
+.audio-section audio{
+width:100%;
+margin-bottom:15px;
+}
+.choir-player{
+max-width:600px;
+margin:auto;
+}
+
+.voice{
+margin-bottom:20px;
+}
+
+.voice input{
+width:100%;
+}
