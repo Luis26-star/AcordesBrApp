@@ -62,6 +62,42 @@
 </a>
 
 <h2>🎧 Übe-Audios</h2>
+
+  <h2>🎶 Chor-Probenplayer</h2>
+
+<div class="choir-player">
+
+<div class="voice">
+<h3>Sopran</h3>
+<audio id="sopran" src="audio/sopran.mp3"></audio>
+<input type="range" min="0" max="1" step="0.01" value="1"
+oninput="setVolume('sopran', this.value)">
+</div>
+
+<div class="voice">
+<h3>Alt</h3>
+<audio id="alt" src="audio/alt.mp3"></audio>
+<input type="range" min="0" max="1" step="0.01" value="1"
+oninput="setVolume('alt', this.value)">
+</div>
+
+<div class="voice">
+<h3>Tenor</h3>
+<audio id="tenor" src="audio/tenor.mp3"></audio>
+<input type="range" min="0" max="1" step="0.01" value="1"
+oninput="setVolume('tenor', this.value)">
+</div>
+
+<div class="voice">
+<h3>Bass</h3>
+<audio id="bass" src="audio/bass.mp3"></audio>
+<input type="range" min="0" max="1" step="0.01" value="1"
+oninput="setVolume('bass', this.value)">
+</div>
+
+<button onclick="playAll()">▶️ Alle Stimmen starten</button>
+
+</div>
 <p>Übungsspuren für die einzelnen Stimmen.</p>
   
 <div class="audio-section">
@@ -119,9 +155,17 @@ document.querySelector(".login-box").style.display = "none";
 else{
 alert("Falsches Passwort");
 }
+}
+function setVolume(voice, volume){
+document.getElementById(voice).volume = volume;
+}
 
+function playAll(){
+document.getElementById("sopran").play();
+document.getElementById("alt").play();
+document.getElementById("tenor").play();
+document.getElementById("bass").play();
 }
 </script>
-
 </body>
 </html>
