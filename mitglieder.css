@@ -68,3 +68,21 @@ font-size:18px;
 background:#155f45;
 transform:scale(1.05);
 }
+.player button{
+
+padding:10px 18px;
+margin:6px;
+font-size:16px;
+border-radius:8px;
+border:none;
+background:#2a7ae2;
+color:white;
+cursor:pointer;
+
+}
+
+.player button:hover{
+
+background:#1f5fb5;
+
+}
