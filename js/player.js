@@ -1,6 +1,6 @@
 const songs = ["Canto_de_Ossanha"];
 
-const voices = ["sopran","alt","tenor","bass"];
+const voices = ["Soprano","Contralto","Tenor","Baixo"];
 
 const container = document.getElementById("song-list");
 
