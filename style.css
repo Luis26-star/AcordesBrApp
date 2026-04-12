@@ -217,3 +217,18 @@ margin-bottom:20px;
 .voice input{
 width:100%;
 }
+.choir-player button{
+background:#1E7F5A;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.choir-player button:hover{
+background:#155c41;
+}
+
