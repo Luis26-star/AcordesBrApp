@@ -1,4 +1,4 @@
-const songs = ["canto_ossanha"];
+const songs = ["Canto_de_Ossanha"];
 
 const voices = ["sopran","alt","tenor","bass"];
 
