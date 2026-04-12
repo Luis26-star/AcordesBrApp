@@ -27,3 +27,19 @@ audio.currentTime = start;
 function stopLoop(){
 clearInterval(loopInterval);
 }
+function playVoice(voice){
+
+stopAll();
+
+document.getElementById(voice).play();
+
+}
+
+function stopAll(){
+
+document.getElementById("sopran").pause();
+document.getElementById("alt").pause();
+document.getElementById("tenor").pause();
+document.getElementById("bass").pause();
+
+}
