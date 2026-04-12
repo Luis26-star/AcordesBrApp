@@ -28,11 +28,10 @@
 <div class="member-grid">
 <div class="member-card">
 
-<h2>🎧 Chor-Probenplayer</h2>
+<h3>🎧 Chor-Probenplayer</h3>
 
-<div id="player"></div>
-
-<script src="js/player.js"></script>
+<div id="songList"></div>
+<script src="js/mixer.js"></script>
 
 <h3>🎼 Noten</h3>
 <p>Download der aktuellen Chorstücke.</p>
@@ -45,67 +44,6 @@
 <a href="#">Audios hören</a>
 </div>
 
-<h3>🎵 Canto de Ossanha</h3>
-
-<div class="player">
-
-<button onclick="playAll()">▶ Alle Stimmen</button>
-
-<button onclick="playVoice('sopran')">▶ Sopran</button>
-<button onclick="playVoice('alt')">▶ Alt</button>
-<button onclick="playVoice('tenor')">▶ Tenor</button>
-<button onclick="playVoice('bass')">▶ Bass</button>
-
-<button onclick="stopAll()">⏹ Stop</button>
-
-</div>
-
-<audio id="sopran" src="audio/canto_ossanha/sopran.mp3"></audio>
-<audio id="alt" src="audio/canto_ossanha/alt.mp3"></audio>
-<audio id="tenor" src="audio/canto_ossanha/tenor.mp3"></audio>
-<audio id="bass" src="audio/canto_ossanha/bass.mp3"></audio>
-
-<button onclick="playAll()">▶ Start</button>
-<button onclick="stopAll()">⏹ Stop</button>
-
-<h4>🎧 Lautstärke</h4>
-
-  <h4>Tempo</h4>
-
-<input type="range" min="0.5" max="1.2" step="0.05" value="1"
-oninput="setTempo(this.value)">
-  
-<h4>Loop</h4>
-
-Start (Sekunden)
-<input type="number" id="loopStart" value="0">
-
-Ende (Sekunden)
-<input type="number" id="loopEnd" value="10">
-
-<button onclick="startLoop()">Loop starten</button>
-<button onclick="stopLoop()">Loop stoppen</button>
-
-Sopran
-<input type="range" min="0" max="1" step="0.1" value="1"
-oninput="setVolume('sopran',this.value)">
-
-Alt
-<input type="range" min="0" max="1" step="0.1" value="0.5"
-oninput="setVolume('alt',this.value)">
-
-Tenor
-<input type="range" min="0" max="1" step="0.1" value="0.5"
-oninput="setVolume('tenor',this.value)">
-
-Bass
-<input type="range" min="0" max="1" step="0.1" value="0.5"
-oninput="setVolume('bass',this.value)">
-
-<h4>🐢 Tempo</h4>
-
-<input type="range" min="0.5" max="1.2" step="0.1" value="1"
-oninput="setTempo(this.value)">
 
 <div class="member-card">
 <h3>📅 Probenplan</h3>
