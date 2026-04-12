@@ -8,7 +8,6 @@
 
 <body>
 
-
 <nav class="navbar">
 <a href="index.html">Start</a>
 <a href="chor.html">Der Chor</a>
@@ -45,6 +44,39 @@
 <p>Stimmproben für Sopran, Alt, Tenor und Bass.</p>
 <a href="#">Audios hören</a>
 </div>
+
+<h3>🎵 Canto de Ossanha</h3>
+
+<audio id="sopran" src="audio/canto_ossanha/sopran.mp3"></audio>
+<audio id="alt" src="audio/canto_ossanha/alt.mp3"></audio>
+<audio id="tenor" src="audio/canto_ossanha/tenor.mp3"></audio>
+<audio id="bass" src="audio/canto_ossanha/bass.mp3"></audio>
+
+<button onclick="playAll()">▶ Start</button>
+<button onclick="stopAll()">⏹ Stop</button>
+
+<h4>🎧 Lautstärke</h4>
+
+Sopran
+<input type="range" min="0" max="1" step="0.1" value="1"
+oninput="setVolume('sopran',this.value)">
+
+Alt
+<input type="range" min="0" max="1" step="0.1" value="0.5"
+oninput="setVolume('alt',this.value)">
+
+Tenor
+<input type="range" min="0" max="1" step="0.1" value="0.5"
+oninput="setVolume('tenor',this.value)">
+
+Bass
+<input type="range" min="0" max="1" step="0.1" value="0.5"
+oninput="setVolume('bass',this.value)">
+
+<h4>🐢 Tempo</h4>
+
+<input type="range" min="0.5" max="1.2" step="0.1" value="1"
+oninput="setTempo(this.value)">
 
 <div class="member-card">
 <h3>📅 Probenplan</h3>
@@ -118,5 +150,6 @@ document.getElementById("tenor").play();
 document.getElementById("bass").play();
 }
 </script>
+<script src="js/mixer.js"></script>
 </body>
 </html>
