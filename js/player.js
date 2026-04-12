@@ -1,8 +1,6 @@
 const songs = [
-  {
-    title: "Canto de Ossanha",
-    folder: "canto_ossanha"
-  }
+  "canto_ossanha",
+  "agua_de_beber"
 ];
 
 const voices = [
@@ -16,13 +14,13 @@ const container = document.getElementById("player");
 
 songs.forEach(song => {
 
-  const card = document.createElement("div");
-  card.style.marginBottom = "25px";
+  const block = document.createElement("div");
+  block.style.marginBottom = "30px";
 
   const title = document.createElement("h3");
-  title.innerText = "🎵 " + song.title;
+  title.innerText = "🎵 " + song.replaceAll("_"," ");
 
-  card.appendChild(title);
+  block.appendChild(title);
 
   voices.forEach(v => {
 
@@ -36,23 +34,22 @@ songs.forEach(song => {
     btn.style.border = "none";
     btn.style.background = "#1db954";
     btn.style.color = "white";
-    btn.style.fontSize = "14px";
     btn.style.cursor = "pointer";
 
     btn.onclick = () => {
 
       const audio = new Audio(
-        "audio/" + song.folder + "/" + v.file
+        "audio/" + song + "/" + v.file
       );
 
       audio.play();
 
     };
 
-    card.appendChild(btn);
+    block.appendChild(btn);
 
   });
 
-  container.appendChild(card);
+  container.appendChild(block);
 
 });
