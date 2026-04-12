@@ -103,7 +103,70 @@
 </a>
 
 </div>
+<div class="mixer">
 
+<h4>🎧 Stimmen-Mixer</h4>
+
+<label>Sopran</label>
+<input type="range" min="0" max="1" step="0.1" value="1"
+oninput="setVolume('soprano',this.value)">
+
+<label>Alt</label>
+<input type="range" min="0" max="1" step="0.1" value="0.7"
+oninput="setVolume('alt',this.value)">
+
+<label>Tenor</label>
+<input type="range" min="0" max="1" step="0.1" value="0.7"
+oninput="setVolume('tenor',this.value)">
+
+<label>Bass</label>
+<input type="range" min="0" max="1" step="0.1" value="0.7"
+oninput="setVolume('bass',this.value)">
+
+</div>
+
+
+<!-- Loop Steuerung -->
+
+<div class="loop">
+
+<h4>🔁 Loop üben</h4>
+
+<label>Start (Sekunden)</label>
+<input type="number" id="loopStart" value="0">
+
+<label>Ende (Sekunden)</label>
+<input type="number" id="loopEnd" value="10">
+
+<br><br>
+
+<button onclick="startLoop()">▶ Loop starten</button>
+<button onclick="stopLoop()">⏹ Loop stoppen</button>
+
+</div>
+
+<div class="progress">
+
+<input type="range"
+id="progress"
+min="0"
+max="100"
+value="0"
+oninput="seek(this.value)">
+
+</div>
+
+
+<div class="focusVoice">
+
+<h4>🎤 Meine Stimme üben</h4>
+
+<button onclick="focusVoice('soprano')">Sopran</button>
+<button onclick="focusVoice('alt')">Alt</button>
+<button onclick="focusVoice('tenor')">Tenor</button>
+<button onclick="focusVoice('bass')">Bass</button>
+
+</div>
 <script>
 function login(){
 
